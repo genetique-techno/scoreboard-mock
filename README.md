@@ -35,4 +35,4 @@ Each entry in the array is an object with the following properties:
 - `AwayTeam` - An object representing the away team
 - `HomeTeam` - An object representing the home team
 
-I encourage you to look into the away and home teams to figure out their structure
+I encourage you to look into the `AwayTeam` and `HomeTeam` objects to determine their structure.
