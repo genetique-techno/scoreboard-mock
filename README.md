@@ -36,3 +36,9 @@ Each entry in the array is an object with the following properties:
 - `HomeTeam` - An object representing the home team
 
 I encourage you to look into the `AwayTeam` and `HomeTeam` objects to determine their structure.
+
+### Browser support
+
+Chrome, Safari, Firefox, Opera, IE9+
+
+*(Utilizes `Array.prototype.forEach`)*
