@@ -1,5 +1,7 @@
 /*
  *
+ * Don't modify this file.
+ *
  * Configures a mock server at the URL:
  * `schedule/week/1`
  *
@@ -13,7 +15,12 @@
     url: /^\/schedule\/week\/1\/?$/,
     responseTime: 500,
     response: function( settings ) {
-      baseSchedule.forEach(function(value, index, array) {
+      var randomIndex = randomInt( 0, 10 );
+      var spliceLimit = 15 - randomIndex;
+      var spliceAmount = randomInt( 0, spliceLimit );
+      var schedules = baseSchedule.splice( randomIndex, spliceAmount );
+
+      schedules.forEach(function(value, index, array) {
         value.AScore = randomInt( 0, 40 );
         value.HScore = randomInt( 0, 40 );
       });
@@ -28,7 +35,6 @@
     return Math.floor( Math.random() * (max-min+1) + min );
   };
 
-  // This object is (destructively) changed with each mock call to the server
   var baseSchedule = [
     {"Schedule_id":"4175","Game_Date":"09/05/2013","Game_Time":"08:30 PM","Status":"FINAL","Location":"Sports Authority Field at Mile High Stadium","AScore":"27","HScore":"49","AwayTeam":{"_":"Baltimore","AwayTeamid":"065"},"HomeTeam":{"_":"Denver","HomeTeamid":"067"},"SeasonType":"Regular"},
     {"Schedule_id":"4176","Game_Date":"09/08/2013","Game_Time":"01:00 PM","Status":"FINAL","Location":"Ralph Wilson Stadium","AScore":"23","HScore":"21","AwayTeam":{"_":"New England","AwayTeamid":"077"},"HomeTeam":{"_":"Buffalo","HomeTeamid":"062"},"SeasonType":"Regular"},
