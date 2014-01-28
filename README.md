@@ -46,13 +46,15 @@ I encourage you to look into the `AwayTeam` and `HomeTeam` objects to determine 
 
 The design of the scoreboard should match [this wireframe](https://gomockingbird.com/mockingbird/#cm4sbgp).
 
+_Though this layout could be accomplished with the table layout model, we encourage you to use other strategies (in other words, any combination of elements that do not have a display value of `table` or `table-cell`)_
+
 ### Guidelines
 
 Each game object returned from the server should be represented by a Backbone model. All of the game objects together should be in a Backbone Collection. Each model needs to render a View for it's data, and each View should render from an Underscore template.
 
 You'll notice that each call to the server returns different data. Be sure to make your interface update with changes.
 
-Also know that the endpoint is unreliable. Don't depend on any specific number of games being returned.
+Also know that the endpoint returns a variable number of games with each request.
 
 ### Due Date
 
