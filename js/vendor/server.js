@@ -24,9 +24,7 @@
         value.AScore = randomInt( 0, 40 );
         value.HScore = randomInt( 0, 40 );
       });
-      var responseText = {
-        schedule: baseSchedule
-      };
+      var responseText = baseSchedule;
       this.responseText = responseText;
     }
   });
