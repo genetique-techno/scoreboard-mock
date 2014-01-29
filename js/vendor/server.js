@@ -15,17 +15,17 @@
     url: /^\/schedule\/week\/1\/?$/,
     responseTime: 500,
     response: function( settings ) {
-      var randomIndex = randomInt( 0, 10 );
-      var spliceLimit = 15 - randomIndex;
-      var spliceAmount = randomInt( 0, spliceLimit );
-      var schedules = baseSchedule.splice( randomIndex, spliceAmount );
+      var randomStart = randomInt( 0, 10 );
+      var sliceLimit = 15 - randomStart;
+      var randomEnd = randomStart + randomInt( 0, sliceLimit );
+      var schedules = baseSchedule.slice( randomStart, randomEnd );
 
       schedules.forEach(function(value, index, array) {
-        value.AScore = randomInt( 0, 40 );
-        value.HScore = randomInt( 0, 40 );
+        array[index].AScore = randomInt( 0, 40 );
+        array[index].HScore = randomInt( 0, 40 );
       });
-      var responseText = baseSchedule;
-      this.responseText = responseText;
+
+      this.responseText = schedules;
     }
   });
 
