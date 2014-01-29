@@ -11,7 +11,7 @@ Clone this repository.
 git clone https://github.com/mobilereactor/scoreboard-mock.git
 ```
 
-_Note: Don't fork the repository_
+_Note: Please don't fork the repository_
 
 ### Project
 
@@ -66,7 +66,7 @@ There's no deadline; take your time and make the best project you can make it.
 
 Once you're finished, either publish your code to Github and mail us back the link, or mail us a zip of the code.
 
-_Note: Don't fork the repository_
+_Note: Please don't fork the repository_
 
 ### Browser support
 
