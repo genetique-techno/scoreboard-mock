@@ -56,7 +56,7 @@ Each game object returned from the server should be represented by a Backbone mo
 
 You'll notice that each call to the server returns different data. Be sure to make your interface update with changes.
 
-Also know that the endpoint returns a variable number of games with each request.
+Also know that the endpoint returns a variable number of games with each request. Your interface should mirror exactly what is returned from the server; this means allowing for games to be both added and removed.
 
 ### Due Date
 
