@@ -7,6 +7,27 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="content">
+    <div id="header">Week 1 NFL Scores</div>
+    <div id="container">
+     
+    </div>
+  </div>
+
+
+
+  <script type="text/template" id='game-thing-tmpl'>
+    <div class="thing_header">
+      <div class="date"><%= Game_Date %> at <%= Game_Time %></div>
+      <div class="status"><%= Status %></div>
+    </div>
+    <div class="thing">
+      <div class="hteam"><%= HomeTeam %></div>
+      <div class="hscore"><%= HScore %></div>
+      <div class="ascore"><%= AScore %></div>
+      <div class="ateam"><%= AwayTeam %></div>
+    </div>
+  </script>
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/jquery.mockjax.js"></script>
   <script src="js/vendor/underscore.js"></script>
