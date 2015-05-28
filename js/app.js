@@ -27,14 +27,11 @@ var Games = Backbone.Collection.extend({
 	// Creates constructor for Collection
 	url: '/schedule/week/1',
 	model: Game,
-	/*parse: function (response) {
-		var result;
-		for (var i = 0; i < response.length; i++) {
-			result[i] = response.models[i].attributes;
-		}
-		return result;
-	}
-	*/
+	//parse: function (response) {
+	//	console.log(response);
+	//	return response.items;
+	//}
+	
 
 });
 
